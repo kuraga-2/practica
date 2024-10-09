@@ -4,14 +4,11 @@ data = data.split()
 a = int(data[0])
 b = int(data[1])
 c = int(data[2])
-if a >= b and a >= c:
+if c == a *b:
     output_data = open('output.txt', 'w')
-    output_data.write(str(a))
-elif b >= c and b >= a:
-    output_data = open('output.txt', 'w')
-    output_data.write(str(b))
+    output_data.write(str("YES"))
 else:
     output_data = open('output.txt', 'w')
-    output_data.write(str(c))
+    output_data.write(str("NO"))
 input_data.close()
 output_data.close()
